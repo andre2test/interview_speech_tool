@@ -1,0 +1,76 @@
+# ==========================================
+# 1. SECRETS & ENVIRONMENT VARIABLES (CRITICAL)
+# ==========================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets.json
+credentials.json
+.venv311/
+
+# ==========================================
+# 2. PYTHON & ML ENVIRONMENTS
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+.pytest_cache/
+.ipynb_checkpoints/
+.streamlit/
+secrets.toml
+
+# ==========================================
+# 3. NODE.JS / FRONTEND UI
+# ==========================================
+node_modules/
+dist/
+build/
+.next/
+npm-debug.log*
+yarn-error.log*
+
+# ==========================================
+# 4. AI MODELS, VECTOR STORES & CHAT DATA
+# ==========================================
+# Local LLM weights & Hugging Face caches
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.onnx
+models/
+checkpoints/
+
+# Local vector databases & embeddings
+chroma_db/
+faiss_index/
+qdrant_storage/
+*.sqlite3
+*.db
+
+# Chat history logs & uploaded user documents
+logs/
+*.log
+chat_history/
+uploads/
+temp_docs/
+
+# ==========================================
+# 5. IDES & OS SYSTEM FILES
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Protoype/.claude/skills/developing-with-streamlit
+Protoype/.agents/skills/developing-with-streamlit
+streamlit/.agents/skills/developing-with-streamlit
+streamlit/.claude/skills/developing-with-streamlit
+speechRecognition/output.mp3
